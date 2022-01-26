@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20ssp"
+        android:text="log in "
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/login_textView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Email "
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:drawableLeft="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_below="@id/login_textView"
+        android:id="@+id/User_Email_login"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" password "
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/password_icon"
+        android:layout_below="@id/User_Email_login"
+        android:id="@+id/User_Password_login"/>
+
+    <Button
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        android:text="log in "
+        android:layout_below="@id/User_Password_login"
+        android:id="@+id/login_button"/>
+
+</RelativeLayout>

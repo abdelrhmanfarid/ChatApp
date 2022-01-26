@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20ssp"
+        android:text="sign up "
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/signup_textView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Full Name "
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/user_name"
+        android:layout_below="@id/signup_textView"
+        android:id="@+id/User_Full_Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Email "
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:drawableLeft="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_below="@id/User_Full_Name"
+        android:id="@+id/User_Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" password "
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/password_icon"
+        android:layout_below="@id/User_Email"
+        android:id="@+id/User_Password"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" confirm password "
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:drawableLeft="@drawable/password_icon"
+        android:layout_below="@id/User_Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:id="@+id/User_Confirm_Password"/>
+
+
+    <Button
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        android:text="sign up "
+        android:layout_below="@id/User_Confirm_Password"
+        android:id="@+id/sign_up_button"/>
+
+
+</RelativeLayout>

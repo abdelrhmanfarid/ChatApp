@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="italic|bold"
+        android:text="Chat app "
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/chat_app_textView"/>
+
+    <Button
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/white"
+        android:text="log in "
+        android:layout_below="@id/chat_app_textView"
+        android:id="@+id/login_button_start"/>
+
+    <Button
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/white"
+        android:text="sign up "
+        android:layout_below="@id/login_button_start"
+        android:id="@+id/sign_up_button_start"/>
+
+
+
+</RelativeLayout>
